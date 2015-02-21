@@ -1,0 +1,93 @@
+---
+title       : The Amazing Car MPG Predictor
+subtitle    : 
+author      : Ken Cheng
+job         : Data Scientist Student
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [bootstrap, quiz]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+--- 
+
+## The Amazing Car MPG Predictor
+
+Are you thinking of buying a new car?
+
+Do you know the manufacturer's claim on fuel consumption?
+
+Would you like to check if the manufacturer's claim is credible?
+
+If your answer is yes to the above questions, then wait no further!
+
+Here is the amazing car MPG predictor!
+
+Try the amazing app at : http://kencheng.shinyapps.io/myApp
+
+--- .class #id 
+
+## How does the Car MPG Predictor work?
+
+We analyzed the Motor Trend Car Road Tests data and built a regression model to predict MPG using the following key predictor variables:
+
+1. Number of cylinders
+
+2. Displacement
+
+3. Gross Horsepower
+
+4. Weight (lb/1000)
+
+5. Transmission (Auto or Manual)
+
+
+```r
+modfit <- lm(mtcars$mpg ~ mtcars$cyl + mtcars$disp + mtcars$hp + mtcars$wt + mtcars$am)
+modfit$coef
+```
+
+```
+## (Intercept)  mtcars$cyl mtcars$disp   mtcars$hp   mtcars$wt   mtcars$am 
+## 38.20279869 -1.10637984  0.01225708 -0.02796002 -3.30262301  1.55649163
+```
+
+--- .class #id 
+
+## Why Buy The Amazing Car MPG Predictor App?
+
+It is fast.
+
+It is simple to use.
+
+It is easy to understand.
+
+It gives consistent reproducible results.
+
+It accurately predicts the car MPG based on key car characteristics.
+
+We are so confident that you will like this product that we are giving you a 14-day FULL MONEY BACK GUARANTEE!
+
+
+
+--- &radio 
+
+## Feedback
+
+How would you rate this app?
+
+1. Not bad
+
+2. _Amazing!_
+
+3. Must Buy
+
+4. Good
+
+*** .hint 
+
+Everybody thinks it's great!
+
+*** .explanation 
+
+The app is so helpful for discovering the true MPG that is is simply amazing!

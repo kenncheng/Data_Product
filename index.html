@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Amazing Car MPG Predictor</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The Amazing Car MPG Predictor">
+  <meta name="author" content="Ken Cheng">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The Amazing Car MPG Predictor</h1>
+    <h2></h2>
+    <p>Ken Cheng<br/>Data Scientist Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The Amazing Car MPG Predictor</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Are you thinking of buying a new car?</p>
+
+<p>Do you know the manufacturer&#39;s claim on fuel consumption?</p>
+
+<p>Would you like to check if the manufacturer&#39;s claim is credible?</p>
+
+<p>If your answer is yes to the above questions, then wait no further!</p>
+
+<p>Here is the amazing car MPG predictor!</p>
+
+<p>Try the amazing app at : <a href="http://kencheng.shinyapps.io/myApp">http://kencheng.shinyapps.io/myApp</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How does the Car MPG Predictor work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>We analyzed the Motor Trend Car Road Tests data and built a regression model to predict MPG using the following key predictor variables:</p>
+
+<ol>
+<li><p>Number of cylinders</p></li>
+<li><p>Displacement</p></li>
+<li><p>Gross Horsepower</p></li>
+<li><p>Weight (lb/1000)</p></li>
+<li><p>Transmission (Auto or Manual)</p></li>
+</ol>
+
+<pre><code class="r">modfit &lt;- lm(mtcars$mpg ~ mtcars$cyl + mtcars$disp + mtcars$hp + mtcars$wt + mtcars$am)
+modfit$coef
+</code></pre>
+
+<pre><code>## (Intercept)  mtcars$cyl mtcars$disp   mtcars$hp   mtcars$wt   mtcars$am 
+## 38.20279869 -1.10637984  0.01225708 -0.02796002 -3.30262301  1.55649163
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why Buy The Amazing Car MPG Predictor App?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>It is fast.</p>
+
+<p>It is simple to use.</p>
+
+<p>It is easy to understand.</p>
+
+<p>It gives consistent reproducible results.</p>
+
+<p>It accurately predicts the car MPG based on key car characteristics.</p>
+
+<p>We are so confident that you will like this product that we are giving you a 14-day FULL MONEY BACK GUARANTEE!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Feedback</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div class="quiz quiz-single well ">
+  <p>How would you rate this app?</p>
+
+<ol>
+<li><p>Not bad</p></li>
+<li><p><em>Amazing!</em></p></li>
+<li><p>Must Buy</p></li>
+<li><p>Good</p></li>
+</ol>
+
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>Everybody thinks it&#39;s great!</p>
+
+</div>
+<div class="quiz-explanation">
+  <p>The app is so helpful for discovering the true MPG that is is simply amazing!</p>
+
+</div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The Amazing Car MPG Predictor'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How does the Car MPG Predictor work?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Why Buy The Amazing Car MPG Predictor App?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Feedback'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
